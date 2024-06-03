@@ -146,7 +146,7 @@ nav ul li a:hover {
 }
 
 .wrapper label:after {
-    border: 2px solid #ddd;
+    border: 2px solid #09ff00;
     content: " ";
     display: block;
     height: 12px;
@@ -226,4 +226,15 @@ nav ul li a:hover {
 
 .button:hover {
     background-color: rgb(114, 6, 6);
+}
+
+.video-section {
+    margin: 40px 0;
+}
+
+.video-section iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
 }
