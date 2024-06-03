@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/9704999/pub_644eb6c34581986bf4d6e85f_644eb6eb55529915e83f849a/scale_1200);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+h1, h2 {
+    color: rgb(6, 138, 1);
+}
+nav ul li {
+    display: inline; 
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: rgb(201, 202, 154); 
+    font-weight: bold;
+}
+nav ul li a:hover {
+    color: rgb(97, 97, 112); 
+}
+.container
+{
+    text-align: center;
+}
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.wrapper {
+    height: 350px;
+    margin: 100px auto 0;
+    position: relative;
+    width: 700px;
+}
+
+.text-slider {
+    text-align: center;
+    position: absolute;
+    top: -50px;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(241, 241, 241);
+}
+
+.text-slide {
+    display: none;
+}
+
+#slide1:checked ~ .text-slider .text-slide1,
+#slide2:checked ~ .text-slider .text-slide2,
+#slide3:checked ~ .text-slider .text-slide3,
+#slide4:checked ~ .text-slider .text-slide4,
+#slide5:checked ~ .text-slider .text-slide5,
+#slide6:checked ~ .text-slider .text-slide6,
+#slide7:checked ~ .text-slider .text-slide7,
+#slide8:checked ~ .text-slider .text-slide8 {
+    display: block;
+}
+
+.slider {
+    height: inherit;
+    overflow: hidden;
+    position: relative;
+    width: inherit;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+    height: inherit;
+    width: inherit;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    transform: scale(1.5);
+    transition: transform ease-in-out 0.5s, opacity ease-in-out 0.5s;
+}
+
+.slide1 { background-image: url(https://naked-science.ru/wp-content/uploads/2016/08/field_image_1462408088_mercury.jpg); }
+.slide2 { background-image: url(https://s0.rbk.ru/v6_top_pics/media/img/2/15/347086156890152.png); }
+.slide3 { background-image: url(https://cdnn1.img.sputnik.tj/img/07e5/03/0c/1032994480_0:0:1920:1080_1920x0_80_0_0_8fa2f519a076be85c4b32cb565a67c5d.jpg); }
+.slide4 { background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/300px-OSIRIS_Mars_true_color.jpg); }
+.slide5 { background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Jupiter_on_2009-07-23_%28captured_by_the_Hubble_Space_Telescope%29.jpg/200px-Jupiter_on_2009-07-23_%28captured_by_the_Hubble_Space_Telescope%29.jpg); }
+.slide6 { background-image: url(https://umnazia.ru/wp-content/uploads/2021/01/planeta-saturn.jpg); }
+.slide7 { background-image: url(https://avatars.dzeninfra.ru/get-zen_doc/941737/pub_5f9f01c53910530e0d0ee0a5_5f9f01eb49505f68111d2f35/scale_1200); }
+.slide8 { background-image: url(https://cdn1.relax-fm.ru/proxy/vardata/modules/news/files/1/145/news_file_145_5c4eab38adc82.jpg?w=1020&h=680&t=1548659512); }
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3,
+#slide4:checked ~ .slider > .slide4,
+#slide5:checked ~ .slider > .slide5,
+#slide6:checked ~ .slider > .slide6,
+#slide7:checked ~ .slider > .slide7,
+#slide8:checked ~ .slider > .slide8 {
+    opacity: 1;
+    z-index: 1;
+    transform: scale(1);
+}
+
+.wrapper > input {
+    display: none;
+}
+
+.wrapper .controls {
+    left: 50%;
+    margin-left: -120px;
+    position: absolute;
+}
+
+.wrapper label {
+    cursor: pointer;
+    display: inline-block;
+    height: 8px;
+    margin: 25px 12px 0 16px;
+    position: relative;
+    width: 8px;
+    border-radius: 50%;
+    transition: background ease-in-out 0.5s;
+}
+
+.wrapper label:hover,
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3),
+#slide4:checked ~ .controls label:nth-of-type(4),
+#slide5:checked ~ .controls label:nth-of-type(5),
+#slide6:checked ~ .controls label:nth-of-type(6),
+#slide7:checked ~ .controls label:nth-of-type(7),
+#slide8:checked ~ .controls label:nth-of-type(8) {
+    background: #ddd;
+}
+
+.wrapper label:after {
+    border: 2px solid #ddd;
+    content: " ";
+    display: block;
+    height: 12px;
+    left: -4px;
+    position: absolute;
+    top: -4px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+.info-section {
+    margin: 40px 0;
+    margin-top: 60px;
+}
+
+.info-section h2 {
+    color: rgb(5, 139, 0);
+}
+
+.facts-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fact-block {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.fact-block img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.fact-block h3 {
+    color: rgb(0, 0, 0);
+    margin: 10px 0;
+}
+
+.fact-block p {
+    color: #555;
+}
+.container p {
+    color: white;
+}
+.fact-block p {
+    color: black;
+}
+
+.fact-block img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.button {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(172, 19, 19);
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(114, 6, 6);
+}
