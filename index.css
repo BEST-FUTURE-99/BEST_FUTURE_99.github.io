@@ -146,11 +146,8 @@ nav ul li a:hover {
 }
 
 .wrapper label:after {
-<<<<<<< HEAD
+
     border: 2px solid #09ff00;
-=======
-    border: 2px solid #29e62d;
->>>>>>> 2070a64767ec286da5a8cc2779680721faf07b37
     content: " ";
     display: block;
     height: 12px;
